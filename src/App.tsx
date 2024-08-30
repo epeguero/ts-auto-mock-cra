@@ -1,6 +1,6 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { createMock } from 'ts-auto-mock';
 
 function App() {
   return (
@@ -22,5 +22,8 @@ function App() {
     </div>
   );
 }
+
+export const x = createMock<{x: number}>();
+console.log(x);
 
 export default App;

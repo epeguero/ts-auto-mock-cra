@@ -20,6 +20,13 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "plugins": [
+    {
+      "transform": "ts-auto-mock/transformer",
+      "cacheBetweenTests": false,
+      "features": ["random"]
+    }
+  ],
   "include": [
     "src"
   ]
